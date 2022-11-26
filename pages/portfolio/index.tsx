@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { Header } from '../../components/header/header'
 import stylesHeader from '../../styles/portfolio/header.module.css'
 import styles from '../../styles/portfolio/homeport.module.css'
@@ -20,11 +20,13 @@ const Portfolio = () => {
                 <section className={styles.main}>
                     <div className={styles.welcome}>
                         <div className={styles.info}>
-                            <h2>Hi!,</h2>
-                            <h1>I'm Franck</h1>
-                            <h4>I'm Full-Stack Developer</h4>
-                            <p>and</p>
-                            <h4>IoT Developer</h4>
+                            <h1>Hi!, I'm Franck</h1>
+                            
+                            <div className={styles.self}>
+                                <h4>"Full-Stack Developer"</h4>
+                                <p> && </p>
+                                <h4>"IoT Developer"</h4>
+                            </div>
                         </div>
                         <div>
 

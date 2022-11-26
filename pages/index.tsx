@@ -14,10 +14,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-          <h3>Welcome to </h3><h1>Rom-Dev.com</h1>
+          <h3>Welcome to </h3><h1>Romer-Dev.com</h1>
         </div>
         <div className={styles.portfolio}>
-          <h3>Visit my </h3><h2><Link href={"/portfolio"}>Portfolio</Link></h2>
+          <h3>Visit my </h3><h2><Link href={"/portfolio"}><u>Portfolio</u> </Link></h2>
         </div>
       </main>
 

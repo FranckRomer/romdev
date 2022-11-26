@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background-color: #FBFAEC; */
+  transition: color, font-size 0.5s;
+  transition: background-color 1s;
 }
 
 a {
@@ -20,7 +23,7 @@ a {
   color: aliceblue;
 }
 .light-theme{
-  background-color: aliceblue;
+  background-color: #FBFAEC;
   color:black
 }
 @media (prefers-color-scheme: dark) {

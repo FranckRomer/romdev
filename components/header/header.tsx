@@ -6,14 +6,14 @@ import Image from 'next/image'
 const Header = (props: { data: string }) => {
     const [modal, setModal] = useState(false)
     const [dark, setDark] = useState(true)
-    useEffect(() => {
-        // Update the document title using the browser API
-        document.body.classList.toggle("light-theme");
-        document.body.classList.toggle("dark-theme");
-        document.body.classList.remove("dark-theme");
-        document.body.classList.remove("light-theme");
-        document.body.classList.toggle("dark-theme");
-      },[]);
+    // useEffect(() => {
+    //     // Update the document title using the browser API
+    //     document.body.classList.toggle("light-theme");
+    //     document.body.classList.toggle("dark-theme");
+    //     document.body.classList.remove("dark-theme");
+    //     document.body.classList.remove("light-theme");
+    //     document.body.classList.toggle("dark-theme");
+    //   },[]);
     const DarkMode = () => {
         // const persistedPreferenceMode = window.localStorage.getItem("theme")
         // console.log(persistedPreferenceMode);

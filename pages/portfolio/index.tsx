@@ -18,15 +18,17 @@ const Portfolio = () => {
             <div className={stylesHeader.body}>
                 <Header data={"Inicio"} />
                 <section className={styles.main}>
+                    <div></div>
                     <div className={styles.welcome}>
                         <div className={styles.info}>
-                            <h1>Hi!, I am Franck </h1>
+                            <h3 >Hi!, I am Franck </h3>
 
                             <div className={styles.self}>
-                                <h4>Full-Stack Developer</h4>
+                                <h1>Full-Stack Developer</h1>
                                 <p> && </p>
-                                <h4>IoT Developer</h4>
+                                <h1>IoT Developer</h1>
                             </div>
+
                         </div>
                         <div>
 
@@ -34,7 +36,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className={styles.corazon}>
-                        <h1>I love programming</h1>
+                        {/* <h1>I love programming</h1> */}
                         <Link href={"/portfolio/contact"} className={styles.animation}>
                             <Image
                                 src={"/icon/corazon.png"}
@@ -46,6 +48,7 @@ const Portfolio = () => {
                         </Link>
                         <p>Contact Me</p>
                     </div>
+                    <div></div>
                 </section>
             </div>
         </div>

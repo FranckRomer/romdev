@@ -20,6 +20,7 @@ a {
 
 .dark-theme{
   background: #14191b;
+  background: #0f1629;
   color: aliceblue;
 }
 .light-theme{
@@ -34,5 +35,19 @@ a {
     color: white;
     background: black;
     background: #14191b;
+    background: #0f1629;
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+    background: #14191b;
+    background: #0f1629;
   }
 }

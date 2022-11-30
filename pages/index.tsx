@@ -13,17 +13,54 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>
-          <h3>Welcome to </h3><h1>Romer-Dev.com</h1>
+        {/* <div className={styles.fondo}><h2>Romer-Dev.com</h2></div> */}
+        <div >
+          <h3>Welcome to </h3>
+          <h1 >Romer-Dev.com</h1>
         </div>
         <div className={styles.portfolio}>
-          <h3>Visit my </h3><h2><Link href={"/portfolio"}><u>Portfolio</u> </Link></h2>
+          <h3>Visit my </h3><Link href={"/portfolio"}> <h2><u>Portfolio</u></h2></Link>
+        </div>
+
+        {/* ----------------------------------------------- */}
+        {/* <hr className={styles.separador} /> */}
+        <h1>Other projects</h1>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+
+            <Link href={"/blog"}>
+              <h2>Blog</h2>
+              <hr />
+              <p>Blog personal en donde encontraras informacion practicas de programacion y con su codigo de ejemplo</p>
+              <h3>Visit my Blog</h3>
+            </Link>
+
+          </div>
+          <div className={styles.card}>
+            <Link href={"/yourmoney"}>
+              <h2>Money</h2>
+              <hr />
+              <p>Aplicacion para ayudarte a tener un control del tus gastos de forma facil y rapida</p>
+              <h3>Visit my App</h3>
+            </Link>
+          </div>
         </div>
       </main>
 
+
       <footer className={styles.footer}>
         <p>Create by </p>
-        <h3>FranckRomer</h3>
+        <h4>FranckRomer</h4>
+        <Link href={"/portfolio/contact"} className={styles.animation}>
+          <Image
+            src={"/icon/corazon.png"}
+            alt='User profile picture'
+            width={30}
+            height={30}
+          />
+
+        </Link>
+
       </footer>
     </div>
   )

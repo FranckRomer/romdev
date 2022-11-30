@@ -25,8 +25,9 @@ const Portfolio = () => {
 
                             <div className={styles.self}>
                                 <h1>Full-Stack Developer</h1>
-                                <p> && </p>
-                                <h1>IoT Developer</h1>
+                                {/* <p> && </p>
+                                <h1>IoT Developer</h1> */}
+                                <p>Hola soy ...... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum iusto totam quae, a expedita consequatur ipsa corrupti cumque, enim adipisci sapiente optio et incidunt, culpa eos quidem qui asperiores dicta? lore</p>
                             </div>
 
                         </div>
@@ -49,6 +50,10 @@ const Portfolio = () => {
                         <p>Contact Me</p>
                     </div>
                     <div></div>
+                    <br />
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sapiente, quis molestias exercitationem aut ad omnis repellendus sit dignissimos aliquam. Deleniti neque rem officiis esse impedit asperiores tenetur, sed obcaecati!</p>
+                    </div>
                 </section>
             </div>
         </div>

@@ -38,13 +38,7 @@ const Header = (props: { data: string }) => {
             <section className={styles.header}>
                 <div className={styles.menu_container}>
                     <div className={styles.logo_contain}>
-                        <div className={styles.hamburguesa} onClick={() => setModal(!modal)}>
-                            <Image
-                                src={"/icon/menuWhite.png"}
-                                alt='User profile picture'
-                                width={30}
-                                height={30} />
-                        </div>
+                        
                         <div className={styles.logo}>
 
                             <Link href={"/"} className={styles.logo}>
@@ -54,6 +48,10 @@ const Header = (props: { data: string }) => {
                         </div>
 
                     </div>
+                    
+                </div>
+
+                <div className={styles.iconos_contain}>
                     <div className={styles.menu2}>
                         {props.data == "Inicio" ? <h3><Link href={"/portfolio"}>Home</Link></h3> : <p><Link href={"/portfolio"}>Home</Link></p>}
                         {props.data == "Proyects" ? <h3><Link href={"/portfolio/proyects"}>Proyects</Link></h3> : <p><Link href={"/portfolio/proyects"}>Proyects</Link></p>}
@@ -61,16 +59,13 @@ const Header = (props: { data: string }) => {
                         {props.data == "About" ? <h3><Link href={"/portfolio/about"}>About</Link></h3> : <p><Link href={"/portfolio/about"}>About</Link></p>}
                         {props.data == "Contact" ? <h3><Link href={"/portfolio/contact"}>Contact</Link></h3> : <p><Link href={"/portfolio/contact"}>Contact</Link></p>}
                     </div>
-                </div>
-
-                <div className={styles.iconos_contain}>
-                    <div className={styles.darkMode} onClick={DarkMode}>
+                    {/* <div className={styles.darkMode} onClick={DarkMode}>
                         <Image
                             src={"/icon/sol-y-luna.png"}
                             alt='User profile picture'
                             width={30}
                             height={30} />
-                    </div>
+                    </div> */}
                     <div className={styles.links}>
                     
                         <Link href={"/portfolio/proyects"}>
@@ -88,19 +83,16 @@ const Header = (props: { data: string }) => {
                                 height={30} />
                         </Link>
                     </div>
+                    <div className={styles.hamburguesa} onClick={() => setModal(!modal)}>
+                            <Image
+                                src={"/icon/menuWhite.png"}
+                                alt='User profile picture'
+                                width={30}
+                                height={30} />
+                        </div>
                 </div>
             </section>
-            {/* ----------------------------------- */}
-            {/* <section className={styles.menu}>               
-                <div></div>
-                {props.data == "Inicio" ? <h1><Link href={"/portfolio"}>Home</Link></h1> : <h3><Link href={"/portfolio"}>Home</Link></h3>}
-                {props.data == "Proyects" ? <h1><Link href={"/portfolio/proyects"}>Proyects</Link></h1> : <h3><Link href={"/portfolio/proyects"}>Proyects</Link></h3>}
-                {props.data == "Skills" ? <h1><Link href={"/portfolio/skills"}>Skills</Link></h1> : <h3><Link href={"/portfolio/skills"}>Skills</Link></h3>}
-                {props.data == "About" ? <h1><Link href={"/portfolio/about"}>About</Link></h1> : <h3><Link href={"/portfolio/about"}>About</Link></h3>}
-                {props.data == "Contact" ? <h1><Link href={"/portfolio/contact"}>Contact</Link></h1> : <h3><Link href={"/portfolio/contact"}>Contact</Link></h3>}
-                <div></div>
-                <div></div>
-            </section> */}
+            {/* ------------------------------------------------- */}
 
             {modal ?
                 <div>
